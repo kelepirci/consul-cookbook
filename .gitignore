@@ -30,6 +30,7 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
+consul-cookbook.iml
 
 # Komodo
 *.komodoproject

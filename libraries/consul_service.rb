@@ -52,7 +52,7 @@ module ConsulCookbook
       attribute(:acl_token, kind_of: String, default: lazy { node['consul']['config']['acl_master_token'] })
 
       def command
-        "#{program} agent -config-file=#{config_file} -config-dir=#{config_dir}"
+        "#{program} agent -enable-script-checks -config-file=#{config_file} -config-dir=#{config_dir}"
       end
 
       def shell_environment
